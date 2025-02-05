@@ -1,0 +1,10 @@
+*.out
+#*#
+*~
+libmy.a
+*.gcno
+*.gcda
+setting_up
+*.o
+**/*.o
+vgcore.*a

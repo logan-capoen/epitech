@@ -1,0 +1,9 @@
+*.out
+#*#
+*~
+libmy.a
+*.gcno
+*.gcda
+organized
+*.o
+**/*.o

@@ -1,0 +1,6 @@
+*.out
+unit_test*
+*.a
+my_ls
+*.o
+my_sudo

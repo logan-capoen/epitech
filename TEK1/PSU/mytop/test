@@ -1,0 +1,605 @@
+==86407== Memcheck, a memory error detector
+==86407== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==86407== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==86407== Command: ./my_top
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x4032BC: chara (my_getnbr.c:26)
+==86407==    by 0x4033BA: my_getnbr (my_getnbr.c:65)
+==86407==    by 0x401F4F: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x4032D0: chara (my_getnbr.c:26)
+==86407==    by 0x4033BA: my_getnbr (my_getnbr.c:65)
+==86407==    by 0x401F4F: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403300: to_num (my_getnbr.c:40)
+==86407==    by 0x4033D2: my_getnbr (my_getnbr.c:67)
+==86407==    by 0x401F4F: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403314: to_num (my_getnbr.c:40)
+==86407==    by 0x4033D2: my_getnbr (my_getnbr.c:67)
+==86407==    by 0x401F4F: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403373: numb (my_getnbr.c:48)
+==86407==    by 0x403401: my_getnbr (my_getnbr.c:69)
+==86407==    by 0x401F4F: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403387: numb (my_getnbr.c:48)
+==86407==    by 0x403401: my_getnbr (my_getnbr.c:69)
+==86407==    by 0x401F4F: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403353: numb (my_getnbr.c:50)
+==86407==    by 0x403401: my_getnbr (my_getnbr.c:69)
+==86407==    by 0x401F4F: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x4032BC: chara (my_getnbr.c:26)
+==86407==    by 0x4033BA: my_getnbr (my_getnbr.c:65)
+==86407==    by 0x401F83: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x4032D0: chara (my_getnbr.c:26)
+==86407==    by 0x4033BA: my_getnbr (my_getnbr.c:65)
+==86407==    by 0x401F83: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403300: to_num (my_getnbr.c:40)
+==86407==    by 0x4033D2: my_getnbr (my_getnbr.c:67)
+==86407==    by 0x401F83: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403314: to_num (my_getnbr.c:40)
+==86407==    by 0x4033D2: my_getnbr (my_getnbr.c:67)
+==86407==    by 0x401F83: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403373: numb (my_getnbr.c:48)
+==86407==    by 0x403401: my_getnbr (my_getnbr.c:69)
+==86407==    by 0x401F83: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403387: numb (my_getnbr.c:48)
+==86407==    by 0x403401: my_getnbr (my_getnbr.c:69)
+==86407==    by 0x401F83: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x403353: numb (my_getnbr.c:50)
+==86407==    by 0x403401: my_getnbr (my_getnbr.c:69)
+==86407==    by 0x401F83: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x484B0E6: strlen (vg_replace_strmem.c:505)
+==86407==    by 0x490E557: __printf_buffer (vfprintf-process-arg.c:435)
+==86407==    by 0x4932AD2: __vsnprintf_internal (vsnprintf.c:96)
+==86407==    by 0x488D492: UnknownInlinedFun (stdio2.h:100)
+==86407==    by 0x488D492: _nc_printf_string_sp (safe_sprintf.c:272)
+==86407==    by 0x4888C8C: vw_printw (lib_printw.c:162)
+==86407==    by 0x4888F09: mvprintw (lib_printw.c:104)
+==86407==    by 0x401FF4: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x484B0F4: strlen (vg_replace_strmem.c:505)
+==86407==    by 0x490E557: __printf_buffer (vfprintf-process-arg.c:435)
+==86407==    by 0x4932AD2: __vsnprintf_internal (vsnprintf.c:96)
+==86407==    by 0x488D492: UnknownInlinedFun (stdio2.h:100)
+==86407==    by 0x488D492: _nc_printf_string_sp (safe_sprintf.c:272)
+==86407==    by 0x4888C8C: vw_printw (lib_printw.c:162)
+==86407==    by 0x4888F09: mvprintw (lib_printw.c:104)
+==86407==    by 0x401FF4: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0574 is 1,972 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== Invalid read of size 1
+==86407==    at 0x484FA70: memmove (vg_replace_strmem.c:1414)
+==86407==    by 0x4903A37: UnknownInlinedFun (string_fortified.h:29)
+==86407==    by 0x4903A37: __printf_buffer_write (Xprintf_buffer_write.c:39)
+==86407==    by 0x490E253: __printf_buffer (vfprintf-process-arg.c:463)
+==86407==    by 0x4932AD2: __vsnprintf_internal (vsnprintf.c:96)
+==86407==    by 0x488D492: UnknownInlinedFun (stdio2.h:100)
+==86407==    by 0x488D492: _nc_printf_string_sp (safe_sprintf.c:272)
+==86407==    by 0x4888C8C: vw_printw (lib_printw.c:162)
+==86407==    by 0x4888F09: mvprintw (lib_printw.c:104)
+==86407==    by 0x401FF4: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Address 0x4ae0573 is 1,971 bytes inside a block of size 32,816 free'd
+==86407==    at 0x4844B83: free (vg_replace_malloc.c:989)
+==86407==    by 0x498B438: closedir (closedir.c:50)
+==86407==    by 0x40238A: get_procs (get_procs.c:74)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407==  Block was alloc'd at
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x498B644: __alloc_dir (opendir.c:115)
+==86407==    by 0x498B6C8: opendir_tail (opendir.c:63)
+==86407==    by 0x402326: get_procs (get_procs.c:66)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 
+==86407== HEAP SUMMARY:
+==86407==     in use at exit: 22,627,822 bytes in 235,425 blocks
+==86407==   total heap usage: 2,354,295 allocs, 2,118,870 frees, 462,203,328 bytes allocated
+==86407== 
+==86407== 9 bytes in 1 blocks are possibly lost in loss record 9 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4955B2E: strdup (strdup.c:42)
+==86407==    by 0x48AD90D: tparm_setup (lib_tparm.c:659)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x4883032: _nc_mvcur_init_sp (lib_mvcur.c:422)
+==86407==    by 0x4888720: newterm_sp (lib_newterm.c:344)
+==86407==    by 0x48889E4: newterm (lib_newterm.c:370)
+==86407==    by 0x4888A77: initscr (lib_initscr.c:93)
+==86407==    by 0x40160E: my_top (main.c:69)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 24 bytes in 1 blocks are possibly lost in loss record 31 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x49C1357: __tsearch (tsearch.c:337)
+==86407==    by 0x49C1357: tsearch (tsearch.c:290)
+==86407==    by 0x48AD92F: tparm_setup (lib_tparm.c:660)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x4883032: _nc_mvcur_init_sp (lib_mvcur.c:422)
+==86407==    by 0x4888720: newterm_sp (lib_newterm.c:344)
+==86407==    by 0x48889E4: newterm (lib_newterm.c:370)
+==86407==    by 0x4888A77: initscr (lib_initscr.c:93)
+==86407==    by 0x40160E: my_top (main.c:69)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 24 bytes in 1 blocks are possibly lost in loss record 32 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x49C1357: __tsearch (tsearch.c:337)
+==86407==    by 0x49C1357: tsearch (tsearch.c:290)
+==86407==    by 0x48AD92F: tparm_setup (lib_tparm.c:660)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x487D297: set_foreground_color (lib_color.c:215)
+==86407==    by 0x48817B8: _nc_do_color_sp (lib_color.c:1063)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1651)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1141)
+==86407==    by 0x4896965: doupdate_sp (tty_update.c:999)
+==86407==    by 0x4889299: wrefresh (lib_refresh.c:66)
+==86407==    by 0x401694: my_top (main.c:79)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 24 bytes in 1 blocks are possibly lost in loss record 33 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x49C1357: __tsearch (tsearch.c:337)
+==86407==    by 0x49C1357: tsearch (tsearch.c:290)
+==86407==    by 0x48AD92F: tparm_setup (lib_tparm.c:660)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x487D227: set_background_color (lib_color.c:195)
+==86407==    by 0x48817FE: _nc_do_color_sp (lib_color.c:1066)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1651)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1141)
+==86407==    by 0x4896965: doupdate_sp (tty_update.c:999)
+==86407==    by 0x4889299: wrefresh (lib_refresh.c:66)
+==86407==    by 0x401694: my_top (main.c:79)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 63 bytes in 1 blocks are possibly lost in loss record 37 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4955B2E: strdup (strdup.c:42)
+==86407==    by 0x48AD90D: tparm_setup (lib_tparm.c:659)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x487D297: set_foreground_color (lib_color.c:215)
+==86407==    by 0x48817B8: _nc_do_color_sp (lib_color.c:1063)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1651)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1141)
+==86407==    by 0x4896965: doupdate_sp (tty_update.c:999)
+==86407==    by 0x4889299: wrefresh (lib_refresh.c:66)
+==86407==    by 0x401694: my_top (main.c:79)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 64 bytes in 1 blocks are possibly lost in loss record 38 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4955B2E: strdup (strdup.c:42)
+==86407==    by 0x48AD90D: tparm_setup (lib_tparm.c:659)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x487D227: set_background_color (lib_color.c:195)
+==86407==    by 0x48817FE: _nc_do_color_sp (lib_color.c:1066)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1651)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1141)
+==86407==    by 0x4896965: doupdate_sp (tty_update.c:999)
+==86407==    by 0x4889299: wrefresh (lib_refresh.c:66)
+==86407==    by 0x401694: my_top (main.c:79)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 168 bytes in 1 blocks are possibly lost in loss record 62 of 113
+==86407==    at 0x4849133: calloc (vg_replace_malloc.c:1675)
+==86407==    by 0x48AD886: tparm_setup (lib_tparm.c:657)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x4883032: _nc_mvcur_init_sp (lib_mvcur.c:422)
+==86407==    by 0x4888720: newterm_sp (lib_newterm.c:344)
+==86407==    by 0x48889E4: newterm (lib_newterm.c:370)
+==86407==    by 0x4888A77: initscr (lib_initscr.c:93)
+==86407==    by 0x40160E: my_top (main.c:69)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 168 bytes in 1 blocks are possibly lost in loss record 63 of 113
+==86407==    at 0x4849133: calloc (vg_replace_malloc.c:1675)
+==86407==    by 0x48AD886: tparm_setup (lib_tparm.c:657)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x487D297: set_foreground_color (lib_color.c:215)
+==86407==    by 0x48817B8: _nc_do_color_sp (lib_color.c:1063)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1651)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1141)
+==86407==    by 0x4896965: doupdate_sp (tty_update.c:999)
+==86407==    by 0x4889299: wrefresh (lib_refresh.c:66)
+==86407==    by 0x401694: my_top (main.c:79)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 168 bytes in 1 blocks are possibly lost in loss record 64 of 113
+==86407==    at 0x4849133: calloc (vg_replace_malloc.c:1675)
+==86407==    by 0x48AD886: tparm_setup (lib_tparm.c:657)
+==86407==    by 0x48B26D7: _nc_tiparm (lib_tparm.c:1340)
+==86407==    by 0x487D227: set_background_color (lib_color.c:195)
+==86407==    by 0x48817FE: _nc_do_color_sp (lib_color.c:1066)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1651)
+==86407==    by 0x4896965: UnknownInlinedFun (tty_update.c:1141)
+==86407==    by 0x4896965: doupdate_sp (tty_update.c:999)
+==86407==    by 0x4889299: wrefresh (lib_refresh.c:66)
+==86407==    by 0x401694: my_top (main.c:79)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 256 bytes in 1 blocks are definitely lost in loss record 70 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4014A0: main (main.c:31)
+==86407== 
+==86407== 350 bytes in 105 blocks are definitely lost in loss record 71 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x403498: extract_word (my_str_to_word_array.c:20)
+==86407==    by 0x403619: my_str_to_word_array (my_str_to_word_array.c:55)
+==86407==    by 0x40178C: get_stat (main.c:102)
+==86407==    by 0x40209C: add_info_proc (get_procs.c:20)
+==86407==    by 0x40226A: put_proc (get_procs.c:50)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 848 bytes in 2 blocks are possibly lost in loss record 78 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4016F4: get_stat (main.c:91)
+==86407==    by 0x40209C: add_info_proc (get_procs.c:20)
+==86407==    by 0x4022A9: put_proc (get_procs.c:56)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 14,840 bytes in 35 blocks are definitely lost in loss record 98 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4016F4: get_stat (main.c:91)
+==86407==    by 0x40209C: add_info_proc (get_procs.c:20)
+==86407==    by 0x40226A: put_proc (get_procs.c:50)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 28,672 bytes in 7 blocks are definitely lost in loss record 100 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4016E6: get_stat (main.c:90)
+==86407==    by 0x402229: put_proc (get_procs.c:44)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 45,255 (38,640 direct, 6,615 indirect) bytes in 35 blocks are definitely lost in loss record 103 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x403584: my_str_to_word_array (my_str_to_word_array.c:47)
+==86407==    by 0x40178C: get_stat (main.c:102)
+==86407==    by 0x402229: put_proc (get_procs.c:44)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 134,395 bytes in 54,250 blocks are definitely lost in loss record 105 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x403498: extract_word (my_str_to_word_array.c:20)
+==86407==    by 0x403619: my_str_to_word_array (my_str_to_word_array.c:55)
+==86407==    by 0x40178C: get_stat (main.c:102)
+==86407==    by 0x40209C: add_info_proc (get_procs.c:20)
+==86407==    by 0x4022A9: put_proc (get_procs.c:56)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 197,219 bytes in 17,929 blocks are definitely lost in loss record 107 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x401E14: display_time (display.c:88)
+==86407==    by 0x401F65: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 895,200 bytes in 17,904 blocks are definitely lost in loss record 108 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x401C7A: display_virt (display.c:68)
+==86407==    by 0x401F9D: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 1,522,948 (2,240 direct, 1,520,708 indirect) bytes in 35 blocks are definitely lost in loss record 110 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4020AA: add_info_proc (get_procs.c:21)
+==86407==    by 0x40226A: put_proc (get_procs.c:50)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 4,579,328 bytes in 17,888 blocks are definitely lost in loss record 111 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x402589: get_command_name (get_procs.c:125)
+==86407==    by 0x401F56: display_procs (display.c:107)
+==86407==    by 0x401685: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 7,550,592 bytes in 17,808 blocks are definitely lost in loss record 112 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4016F4: get_stat (main.c:91)
+==86407==    by 0x40209C: add_info_proc (get_procs.c:20)
+==86407==    by 0x4022A9: put_proc (get_procs.c:56)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== 7,570,096 bytes in 17,854 blocks are definitely lost in loss record 113 of 113
+==86407==    at 0x4841866: malloc (vg_replace_malloc.c:446)
+==86407==    by 0x4016F4: get_stat (main.c:91)
+==86407==    by 0x402229: put_proc (get_procs.c:44)
+==86407==    by 0x402367: get_procs (get_procs.c:71)
+==86407==    by 0x401671: my_top (main.c:78)
+==86407==    by 0x401514: main (main.c:38)
+==86407== 
+==86407== LEAK SUMMARY:
+==86407==    definitely lost: 21,011,828 bytes in 143,851 blocks
+==86407==    indirectly lost: 1,527,323 bytes in 91,168 blocks
+==86407==      possibly lost: 1,560 bytes in 11 blocks
+==86407==    still reachable: 87,111 bytes in 395 blocks
+==86407==         suppressed: 0 bytes in 0 blocks
+==86407== Reachable blocks (those to which a pointer was found) are not shown.
+==86407== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==86407== 
+==86407== For lists of detected and suppressed errors, rerun with: -s
+==86407== ERROR SUMMARY: 583967 errors from 39 contexts (suppressed: 0 from 0)
